@@ -1,0 +1,79 @@
+\documentclass{book}
+
+\usepackage[latexmk,mathjax,HomeHTMLFilename=home]{lwarp}
+\CSSFilename{style.css}
+\MathJaxFilename{javascript.txt}
+\setcounter{FileDepth}{1}
+\setcounter{tocdepth}{1}
+\boolfalse{CombineHigherDepths}
+
+\usepackage{amsmath,amssymb}
+\usepackage{lipsum}
+\usepackage{tikz}
+\usepackage{hyperref}
+
+\input{lwarp-filename-maker.tex} % name files after the short section names in brackets
+
+\begin{document}
+
+\title{Example of using lwarp in the style of tikz.dev}
+\author{Dominik Peters}
+
+\HTMLTitle{Example}
+\HTMLTitleAfterSection
+
+\maketitle
+
+\label{table-of-contents}
+
+\tableofcontents
+
+\section[index]{Introduction}
+
+% The titlepage
+
+\BlockClassSingle{manual-title-block}{%
+\BlockClassSingle{manual-title}{Example of using lwarp in the style of tikz.dev}
+\BlockClassSingle{manual-version}{Version 1}
+}
+
+\lipsum[1-3]
+
+\part[part1]{Part 1}
+
+\section[section1]{Section 1}
+\lipsum[1-3]
+
+\subsection{Introduction}
+\lipsum[1-3]
+
+Mathematics:
+\[
+    \int_0^1 x^2 \, dx = \frac{1}{3}    
+\]
+
+\subsection{Details}
+\lipsum[4]
+
+\begin{tikzpicture}
+    % smiley face
+    \draw[fill=yellow] (0,0) circle (1cm);
+    \draw (0,0) circle (1cm);
+    \draw (0.3,0.3) circle (0.1cm);
+    \draw (-0.3,0.3) circle (0.1cm);
+    % draw a smile
+    \draw (-0.5,-0.5) arc (0:-180:0.5 and 0.2);
+\end{tikzpicture}
+
+\subsection{More Details}
+\lipsum[5-8]
+
+\subsection{Even More Details}
+\lipsum[9-14]
+
+
+\section[section2]{Section 2}
+\lipsum[4-7]
+
+\end{document}
+
