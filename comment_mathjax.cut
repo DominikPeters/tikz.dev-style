@@ -1,0 +1,11 @@
+\CustomizeMathJax{\newcommand{\intertext}[1]{\text{#1}\notag \\}}
+\CustomizeMathJax{\let\Hat\hat}
+\CustomizeMathJax{\let\Check\check}
+\CustomizeMathJax{\let\Tilde\tilde}
+\CustomizeMathJax{\let\Acute\acute}
+\CustomizeMathJax{\let\Grave\grave}
+\CustomizeMathJax{\let\Dot\dot}
+\CustomizeMathJax{\let\Ddot\ddot}
+\CustomizeMathJax{\let\Breve\breve}
+\CustomizeMathJax{\let\Bar\bar}
+\CustomizeMathJax{\let\Vec\vec}

@@ -1,0 +1,6 @@
+pdfseparate -f %1 -l %1 %4_html.pdf main-images/lateximagetemp-%%d.pdf
+pdfcrop --hires --margins '0 1 0 0' main-images/lateximagetemp-%1.pdf main-images/%3.pdf
+pdftocairo -svg -noshrink main-images/%3.pdf main-images/%3.svg
+del main-images/%3.pdf
+del main-images/lateximagetemp-%1.pdf
+exit
